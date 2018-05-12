@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″ />
+    <meta name=”viewport” content=”high=device-high, initial-scale=1″ />
+<style>
+body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+#header {
+    background-color:rgb(150,130,150);
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav1 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:500px;
+    width:120px;
+    float:left;
+    padding:5px;	      
+}
+#nav2 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:500px;
+    width:190px;
+    float:right;
+    padding:5px;	      
+}
+#section {
+    height:500px;
+    width:550px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:rgb(150,130,150);
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
+    <script>
+    function Visualization1()
+             {
+                 window.open("index1.html");
+             }
+        
+    function Visualization2()
+             {
+                 window.open("https://qqq807111690.github.io/web4gis15/dd.html");
+             }
+        
+    function Visualization3()
+             {
+                 window.open("index3.html");
+             }
+        
+    function relateddata()
+             {
+                 //此函数调用上面的查询条件，从页面中间的表中查询。
+                 window.open("index4.html");
+             }
+        
+        //获取当前时间
+//    var date=new Date();
+//    document.write(d);
+    </script>
+
+<body>
+
+<div id="header">
+<h1>基于多源大数据的基础测绘要素变化探测分析系统</h1>
+</div>
+
+<div id="nav1">
+    <img src="image/search1.jpg" height="80px" width="120px"/>
+    <input type="button" style="background:rgb(162,205,90)" id="btnhtml1" value="多源可视化" onclick="Visualization1()"/>
+    <br><br>
+    <img src="image/vis.jpg" height="80px" width="120px"/>
+    <input type="button" style="background:rgb(162,205,90)" id="btnhtml2" value="数据抓取列表" onclick="Visualization2()"/><br><br>
+    <img src="image/zj.jpg" height="80px" width="120px"/>
+    <input type="button" style="background:rgb(162,205,90)" id="btnhtml2" value="四屏联动显示" onclick="Visualization3()"/><br><br>
+</div>
+<div id="nav2">
+    要素类别：<br>
+            <select id="selectstyle">
+					<option value="0">dark-gray</option>
+					<option value="1">dark-gray-vector</option>
+					<option value="2">gray</option>
+					<option value="3">gray-vector</option>
+					<option value="4">hybrid</option>
+					<option value="5">national-geographic</option>
+					<option value="6">oceans</option>
+					<option value="7">osm</option>
+					<option value="8">satellite</option>
+					<option value="9">streets</option>
+					<option value="10">streets-navigation-vector</option>
+					<option value="11">streets-night-vector</option>
+					<option value="12">streets-relief-vector</option>
+					<option value="13">streets-vector</option>
+					<option value="14">terrain</option>
+					<option value="15">topo</option>
+					<option value="16">topo-vector</option>
+            </select>
+            <br>
+    更新要求：<br>
+            <select id="selectstyle">
+					<option value="0">dark-gray</option>
+					<option value="1">dark-gray-vector</option>
+					<option value="2">gray</option>
+					<option value="3">gray-vector</option>
+					<option value="4">hybrid</option>
+					<option value="5">national-geographic</option>
+					<option value="6">oceans</option>
+					<option value="7">osm</option>
+					<option value="8">satellite</option>
+					<option value="9">streets</option>
+					<option value="10">streets-navigation-vector</option>
+					<option value="11">streets-night-vector</option>
+					<option value="12">streets-relief-vector</option>
+					<option value="13">streets-vector</option>
+					<option value="14">terrain</option>
+					<option value="15">topo</option>
+					<option value="16">topo-vector</option>
+            </select> 
+            <br>
+     地区：<br>
+            <select id="selectstyle">
+					<option value="0">dark-gray</option>
+					<option value="1">dark-gray-vector</option>
+					<option value="2">gray</option>
+					<option value="3">gray-vector</option>
+					<option value="4">hybrid</option>
+					<option value="5">national-geographic</option>
+					<option value="6">oceans</option>
+					<option value="7">osm</option>
+					<option value="8">satellite</option>
+					<option value="9">streets</option>
+					<option value="10">streets-navigation-vector</option>
+					<option value="11">streets-night-vector</option>
+					<option value="12">streets-relief-vector</option>
+					<option value="13">streets-vector</option>
+					<option value="14">terrain</option>
+					<option value="15">topo</option>
+					<option value="16">topo-vector</option>
+            </select> 
+            <br><br>
+            <input type="button" id="btnhtml3" value="相关数据" onclick="relateddata()"/>
+</div>
+
+<div id="section">
+<h2>新闻数据</h2>
+<p>
+London is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.
+</p>
+<p>
+Standing on the River Thames, London has been a major settlement for two millennia,
+its history going back to its founding by the Romans, who named it Londinium.
+</p>
+</div>
+
+<div id="footer">
+关于我们
+</div>
+
+</body>
+</html>
